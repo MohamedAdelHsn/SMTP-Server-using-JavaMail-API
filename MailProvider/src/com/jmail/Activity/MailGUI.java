@@ -109,11 +109,11 @@ public class MailGUI extends JFrame {
 		  message_Area.setLineWrap(true); 
 		  message_Area.setWrapStyleWord(true);		  
 		  JScrollPane scrollPane = new JScrollPane(message_Area);     
-	      scrollPane.setBounds(smtp_hostfield.getX(),message.getY() ,350 ,125);  
+	          scrollPane.setBounds(smtp_hostfield.getX(),message.getY() ,350 ,125);  
 		  
 	      
-	      send_btn = new JButton("Send");
-	      send_btn.setBounds(passwordField.getX()-20, scrollPane.getY()+scrollPane.getHeight(), 87, 28);
+	          send_btn = new JButton("Send");
+	          send_btn.setBounds(passwordField.getX()-20, scrollPane.getY()+scrollPane.getHeight(), 87, 28);
 		
 		  
 		  mail_panel.add(smtp_mailhost);	
@@ -137,7 +137,7 @@ public class MailGUI extends JFrame {
 		  add(mail_panel);
 		  setSize(650, 450);
 		  setLayout(null);
-	      setDefaultLookAndFeelDecorated(true);
+	          setDefaultLookAndFeelDecorated(true);
 		  setDefaultCloseOperation(EXIT_ON_CLOSE);	
 		  setResizable(false);
 		  setTitle("Mail Provider");		
