@@ -12,6 +12,12 @@ Store-and- forward method
 The end to end model is used to communicate between different organizations whereas the store and forward method are used within an organization. A SMTP client who wants to send the mail will contact the destination’s host SMTP directly in order to send the mail to the destination. The SMTP server will keep the mail to itself until it is successfully copied to the receiver’s SMTP.
 The client SMTP is the one which initiates the session let us call it as the client- SMTP and the server SMTP is the one which responds to the session request and let us call it as receiver-SMTP. The client- SMTP will start the session and the receiver-SMTP will respond to the request.
 
+# Security Layers Type 
+
+**TLS** :  Transport Layer Security (TLS) helps solve this issue by offering encryption technology for your message while it is “in transit” from one secure email server to another. That is, TLS helps prevent eavesdropping on email as it is carried between email servers that have enabled TLS protections for email
+
+**SSL** : SSL stands for Secured Socket Layer - basically it is a secure way of providing authentication and encryption during communication online between your computer and the Purple Dog mail server.
+
 # Some SMTP Commands:
 HELO – Identifies the client to the server, fully qualified domain name, only sent once per session
 MAIL – Initiate a message transfer, fully qualified domain of originator
